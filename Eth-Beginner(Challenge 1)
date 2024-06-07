@@ -1,0 +1,34 @@
+// SPDX-License-Identifier: MIT
+// Write a simple contract and declare four different types of variables. Write get and set functions for each of these variables. Return the value of the variable in the “set function”.
+pragma solidity 0.8.7;
+contract  HelloWorld {
+  string public name = "Vikash";
+  uint public age = 20;
+  address public add;
+  bool public result = true;
+  function setperson(string memory name_) public{
+    name = name_;
+  }
+  function setage(uint age_) public {
+    age = age_;
+  }
+  function setadd(address add_) public {
+    add = add_;
+  }
+  function setresult(bool pass_) public {
+    result = pass_;
+  }
+  function getperson() public view returns(string memory) {
+    return name;
+  }
+  function getage() public view returns(uint) {
+    return age;
+  }
+  function getadd() public view returns(address){
+    return add;
+  }
+  function getresult() public view returns(bool){
+    return result;
+  }
+}
+
