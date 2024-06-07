@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.7;
+
+contract loop {
+    uint256 public res;
+
+    function loop_1000() public {
+        uint256 sum = 0;
+        for (uint256 i = 0; i < 1000; i++) {
+            sum += i; 
+        }
+        res = sum;
+    }
+}
