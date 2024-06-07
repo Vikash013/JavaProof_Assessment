@@ -1,0 +1,25 @@
+// Write a smart contract that takes some ether from the user. Find out its value in units of:
+// 1. wei 2. ether 3. gwei
+
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.7;
+
+contract cyrpto {
+    uint256 public number = 20;
+
+    function seteth(uint a) public payable {
+        number += a;
+    }
+
+    function getwei() public view returns(uint256){
+        return number;
+    }
+
+    function getether() public view returns(uint256){
+        return number/1 ether;
+    }
+
+    function getgwei() public view returns(uint256) {
+        return number/1 gwei;
+    }
+}
